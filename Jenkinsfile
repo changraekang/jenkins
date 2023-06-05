@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     echo "3. K8s Deploy..."
-                    sh "/usr/local/bin/kubectl --kubeconfig=${kubeconfig} delete -f ./deploy-jwt.yaml -n kang"
+                   // sh "/usr/local/bin/kubectl --kubeconfig=${kubeconfig} delete -f ./deploy-jwt.yaml -n kang"
                     sh "/usr/local/bin/kubectl --kubeconfig=${kubeconfig} apply -f ./deploy-jwt.yaml -n kang"
                 }
             }
