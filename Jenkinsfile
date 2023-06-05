@@ -2,7 +2,7 @@
 pipeline {
     environment {
         imageName = "storkcr/test-push"
-        registryCredential = '3a429805-6813-4762-b4f5-1744dbb4a939'
+        registryCredential = 'kang-docker'
         kubeconfig = '/home/kang/.kube/config'
         dockerImage = ''
     }
