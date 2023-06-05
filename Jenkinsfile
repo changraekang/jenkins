@@ -1,9 +1,9 @@
 //
 pipeline {
     environment {
-        imageName = "duhyun/jwt-node"
+        imageName = "storkcr/test-push"
         registryCredential = 'eastshine-token'
-        kubeconfig = '/home/duhyun/.kube/config'
+        kubeconfig = '/home/storkcr/.kube/config'
         dockerImage = ''
     }
     agent any
