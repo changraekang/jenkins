@@ -1,7 +1,7 @@
 //
 pipeline {
     environment {
-        imageName = "storkcr/test-push"
+        imageName = "storkcr/test-push:0.1"
         registryCredential = 'eastshine-token'
         kubeconfig = '/home/storkcr/.kube/config'
         dockerImage = ''
